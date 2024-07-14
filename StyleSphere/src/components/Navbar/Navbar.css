@@ -1,0 +1,108 @@
+/* src/components/Navbar.css */
+.navbar-container {
+    height: 60px;
+  }
+  
+  .navbar-wrapper {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-left, .navbar-center, .navbar-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-language {
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .navbar-search-container {
+    border: 0.5px solid lightgray;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+  }
+  
+  .navbar-input {
+    border: none;
+    outline: none;
+  }
+  
+  .navbar-search-icon {
+    color: gray;
+    font-size: 16px;
+    margin-left: 5px;
+  }
+  
+  .navbar-center {
+    text-align: center;
+  }
+  
+  .navbar-logo {
+    font-weight: bold;
+  }
+  
+  .navbar-right {
+    justify-content: flex-end;
+  }
+  
+  .navbar-menu-item {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 25px;
+    position: relative;
+  }
+  
+  .navbar-cart-icon {
+    font-size: 18px;
+  }
+  
+  .navbar-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-container {
+      height: 50px;
+    }
+  
+    .navbar-wrapper {
+      padding: 10px 0;
+    }
+  
+    .navbar-language {
+      display: none;
+    }
+  
+    .navbar-input {
+      width: 50px;
+    }
+  
+    .navbar-logo {
+      font-size: 24px;
+    }
+  
+    .navbar-right {
+      flex: 2;
+      justify-content: center;
+    }
+  
+    .navbar-menu-item {
+      font-size: 12px;
+      margin-left: 10px;
+    }
+  }
+  

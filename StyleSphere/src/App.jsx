@@ -1,18 +1,23 @@
 // src/App.jsx
 import React from 'react';
 import './App.css'; // Assuming you have a global CSS file
-import Header from './components/Header';
+import Announcement from './components/Announcement/Announcement';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Announcement />
       <main>
         <section style={{ height: '200vh', paddingTop: '4rem' }}>
+          
           {/* Your main content goes here */}
-          <h2>Welcome to my website!</h2>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

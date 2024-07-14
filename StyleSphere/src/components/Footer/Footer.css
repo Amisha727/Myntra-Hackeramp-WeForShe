@@ -1,0 +1,94 @@
+/* src/components/Footer.css */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #f1f1f1; /* Change to desired background color */
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.desc {
+  margin: 20px 0;
+}
+
+.social-container {
+  display: flex;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.social-icon.facebook {
+  background-color: #3B5999;
+}
+
+.social-icon.instagram {
+  background-color: #E4405F;
+}
+
+.social-icon.twitter {
+  background-color: #55ACEE;
+}
+
+.social-icon.pinterest {
+  background-color: #E60023;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+.payment {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-center {
+    display: none;
+  }
+}

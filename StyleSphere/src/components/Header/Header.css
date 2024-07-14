@@ -1,0 +1,111 @@
+/* src/components/Header.css */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #e5d0e0; /* Purple */
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.header.scrolled {
+  background-color: #e3b4db; /* Light purple */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: padding 0.3s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+}
+
+.navbar-heading {
+  font-size: 30px; /* Adjust size as needed */
+  font-weight: bold;
+  color: #ff7eb9; /* Pink color */
+}
+
+.search-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.search-section form {
+  display: flex;
+  align-items: center;
+}
+
+.search-section input[type="text"] {
+  width: 200px; /* Adjust size as needed */
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #aca7a7;
+  border-radius: 2px;
+}
+
+.search-section button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px; /* Reduced gap */
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000; /* Text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-links .icon {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+}
+
+.nav-links span {
+  font-size: 12px; /* Adjust size as needed */
+  margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .header-container {
+      padding: 10px;
+  }
+
+  .nav-links {
+      display: none; /* Hide for mobile, can be shown with a menu icon click */
+  }
+}
