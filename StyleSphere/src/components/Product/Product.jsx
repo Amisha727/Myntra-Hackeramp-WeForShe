@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Product.css";
 
+
 const Product = ({ item }) => {
   return (
     <div className="container">

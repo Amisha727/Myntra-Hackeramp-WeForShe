@@ -1,6 +1,8 @@
 // src/pages/Register.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer/Footer';
+import Header from '../components/Header/Header';
 import './Register.css'; // Import the CSS file
 
 const Register = () => {
@@ -31,6 +33,8 @@ const Register = () => {
   };
 
   return (
+    <>
+    <Header />
     <div className="container">
       <div className="wrapper">
         <h1 className="title">CREATE AN ACCOUNT</h1>
@@ -87,6 +91,8 @@ const Register = () => {
         </form>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 

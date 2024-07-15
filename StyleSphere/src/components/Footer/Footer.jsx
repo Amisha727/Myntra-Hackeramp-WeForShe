@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-left">
-        <h1 className="logo">LAMA.</h1>
+        <h1 className="logo">StyleSphere</h1>
         <p className="desc">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -44,13 +44,13 @@ const Footer = () => {
       <div className="footer-right">
         <h3 className="title">Contact</h3>
         <div className="contact-item">
-          <span className="contact-icon">📍</span> 622 Dixie Path , South Tobinchester 98336
+          <span className="contact-icon">📍</span> 124 Arial Path Leona City
         </div>
         <div className="contact-item">
-          <span className="contact-icon">📞</span> +1 234 56 78
+          <span className="contact-icon">📞</span> +91 335 535 2446
         </div>
         <div className="contact-item">
-          <span className="contact-icon">📧</span> contact@lama.dev
+          <span className="contact-icon">📧</span> contact@stylesphere
         </div>
         <img className="payment" src="https://i.ibb.co/Qfvn4z6/payment.png" alt="Payment Methods" />
       </div>

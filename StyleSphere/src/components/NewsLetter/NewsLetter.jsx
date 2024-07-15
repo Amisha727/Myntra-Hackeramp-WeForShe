@@ -1,7 +1,6 @@
 
 import React from "react";
-import { Send } from "react-router-dom";
-import "./Newsletter.css";
+import "./NewsLetter.css";
 const Newsletter = () => {
   return (
     <div className="newsletter-container">
@@ -10,7 +9,7 @@ const Newsletter = () => {
       <div className="newsletter-input-container">
         <input className="newsletter-input" placeholder="Your email" />
         <button className="newsletter-button">
-          <Send />
+        
         </button>
       </div>
     </div>

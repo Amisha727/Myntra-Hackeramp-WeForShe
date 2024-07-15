@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import Footer from '../components/Footer/Footer';
+import Header from '../components/Header/Header';
 import { login } from '../redux/apiCalls';
 import './Login.css';
 
@@ -24,7 +26,11 @@ const Login = () => {
   };
 
   return (
+    <>
+    <Header />
+  
     <div className="login-container">
+
       <div className="login-wrapper">
         <h1 className="login-title">SIGN IN</h1>
         <form className="login-form">
@@ -52,6 +58,8 @@ const Login = () => {
         </form>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
