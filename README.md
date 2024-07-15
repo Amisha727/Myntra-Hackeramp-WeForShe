@@ -1,7 +1,7 @@
-# Project Title
+# StyleSphere 
 
 ## Description
-A brief description of your project.
+E-Commerce Website 
 
 ## Screenshots
 
@@ -10,3 +10,6 @@ A brief description of your project.
 
 ### Screenshot 2
 ![Screenshot 2](./Screenshots/Sign-in.png)
+
+### Screenshot 2
+![Screenshot 2](./Screenshots/NewsLetter1.png)
