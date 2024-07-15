@@ -1,0 +1,52 @@
+.container {
+    width: 100%;
+  }
+  
+  .title {
+    margin: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .filterContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .filter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filterText {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+  
+  select {
+    padding: 10px;
+    margin-right: 20px;
+  }
+  
+  /* Mobile styles */
+  @media only screen and (max-width: 768px) {
+    .filterContainer {
+      flex-direction: column;
+    }
+  
+    .filter {
+      margin: 20px 0;
+    }
+  
+    .filterText {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    select {
+      margin: 10px 0;
+    }
+  }
+  

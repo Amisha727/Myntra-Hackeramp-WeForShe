@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
-import Announcement from "../components/Announcement";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
-import Newsletter from "../components/Newsletter";
 import { addProduct } from "../redux/cartRedux";
 import { publicRequest } from "../requestMethods";
-import "../styles/Product.css";
+import "./Product.css";
 
 const Product = () => {
   const location = useLocation();
@@ -42,8 +38,7 @@ const Product = () => {
 
   return (
     <div className="Container">
-      <Navbar />
-      <Announcement />
+    
       <div className="Wrapper">
         <div className="ImgContainer">
           <img className="Image" src={product.img} alt={product.title} />
@@ -88,8 +83,7 @@ const Product = () => {
           </div>
         </div>
       </div>
-      <Newsletter />
-      <Footer />
+  
     </div>
   );
 };

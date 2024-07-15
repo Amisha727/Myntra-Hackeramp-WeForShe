@@ -1,6 +1,7 @@
 // src/Pages/Login.jsx
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { login } from '../redux/apiCalls';
 import './Login.css';
 
@@ -8,11 +9,18 @@ const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const { isFetching, error } = useSelector((state) => state.user);
 
-  const handleClick = (e) => {
+  const handleLogin = (e) => {
     e.preventDefault();
-    login(dispatch, { username, password });
+    login(dispatch, { username, password }).then(() => {
+      navigate('/');
+    });
+  };
+
+  const handleRegister = () => {
+    navigate('/register');
   };
 
   return (
@@ -33,14 +41,14 @@ const Login = () => {
           />
           <button
             className="login-button"
-            onClick={handleClick}
+            onClick={handleLogin}
             disabled={isFetching}
           >
             LOGIN
           </button>
           {error && <span className="login-error">Something went wrong...</span>}
           <a className="login-link">DO NOT YOU REMEMBER THE PASSWORD?</a>
-          <a className="login-link">CREATE A NEW ACCOUNT</a>
+          <a className="login-link" onClick={handleRegister}>CREATE A NEW ACCOUNT</a>
         </form>
       </div>
     </div>
