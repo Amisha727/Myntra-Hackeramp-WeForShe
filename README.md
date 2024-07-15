@@ -1,1 +1,1 @@
-"Screenshots/Sign-Up.png"
+Screenshots/Sign-Up.png
