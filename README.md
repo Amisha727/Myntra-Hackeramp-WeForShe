@@ -12,4 +12,4 @@ E-Commerce Website
 ![Screenshot 2](./Screenshots/Sign-in.png)
 
 ### Screenshot 2
-![Screenshot 2](./Screenshots/NewsLetter1.png)
+![Screenshot 2](./Screenshots/Newsletter1.png)
