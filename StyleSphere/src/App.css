@@ -1,21 +1,14 @@
-/* src/App.css */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: #333;
-}
-
-main {
-  padding-top: 70px; /* To prevent content from hiding behind the fixed header */
-}
-
+/* App.css */
 .App {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* Ensure the app takes up at least the full viewport height */
+  background-color: #f0f0f0; /* Example background color */
 }
 
-footer {
-  margin-top: auto;
+main {
+  flex: 1; /* Ensure the main content area takes up remaining space */
+  padding: 20px; /* Example padding */
 }
+
+/* Adjust any other styles as per your layout requirements */

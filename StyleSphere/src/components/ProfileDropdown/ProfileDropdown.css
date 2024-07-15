@@ -1,0 +1,32 @@
+.profile-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: none;
+  z-index: 1000;
+}
+
+.profile-dropdown p,
+.profile-dropdown a,
+.profile-dropdown button {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+}
+
+.profile-dropdown a:hover,
+.profile-dropdown button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Ensure the dropdown is visible on parent hover */
+.nav-item:hover .profile-dropdown {
+  display: block;
+}
