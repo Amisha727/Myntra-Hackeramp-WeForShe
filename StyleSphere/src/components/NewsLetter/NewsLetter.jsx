@@ -1,7 +1,7 @@
-import { Send } from "@material-ui/icons";
-import React from "react";
-import "./Newsletter.css";
 
+import React from "react";
+import { Send } from "react-router-dom";
+import "./Newsletter.css";
 const Newsletter = () => {
   return (
     <div className="newsletter-container">
