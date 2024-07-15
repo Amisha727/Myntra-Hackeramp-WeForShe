@@ -1,1 +1,1 @@
-Screenshots/Sign-Up.png
+Sign-Up.png
